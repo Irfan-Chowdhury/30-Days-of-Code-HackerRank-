@@ -16,8 +16,32 @@ print("Binary of the given number = "+listToStr)
 '''
 
 
+# =======#Day-10 Decimal To Binary - Using in-built function
+'''
+def decimalToBinary(n):
+    return bin(n).replace("0b", "")
 
-# ======== Maximum Consecutive 1’s in Binary Representation ======== 
+n = int(input())
+print(decimalToBinary(n))
+'''
+
+
+# ======= Decimal To Binary - Using Recursion ======
+'''
+def DecimalToBinary(num): 
+    if num > 1: 
+        DecimalToBinary(num // 2) 
+    print(num % 2, end = '') 
+  
+# decimal value 
+value = int(input())
+      
+# Calling function 
+DecimalToBinary(value) 
+'''
+
+
+# ========#Day-10 Maximum Consecutive 1’s in Binary Representation ======== 
 
 data = []
 n = int(input())
@@ -43,29 +67,4 @@ for i in range(len(data)):
         count = 0
         
 print(max_consecutive_1s)
-
-
-# ======= Decimal To Binary - Using in-built function
-'''
-def decimalToBinary(n):
-    return bin(n).replace("0b", "")
-
-n = int(input())
-print(decimalToBinary(n))
-'''
-
-
-# ======= Decimal To Binary - Using Recursion ======
-'''
-def DecimalToBinary(num): 
-    if num > 1: 
-        DecimalToBinary(num // 2) 
-    print(num % 2, end = '') 
-  
-# decimal value 
-value = int(input())
-      
-# Calling function 
-DecimalToBinary(value) 
-'''
 
