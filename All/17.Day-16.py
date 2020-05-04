@@ -1,0 +1,37 @@
+import sys
+
+S = input().strip()
+
+try:
+    print(int(S))
+
+except ValueError: #this "ValueError" is a Error Name in compilation
+    print("Bad String")
+    sys.exit()
+
+
+'''
+import sys
+
+print("Lets fix the previous code with exception handling")
+
+try:
+    number = int(input("Enter a number between 1 - 10: "))
+
+except ValueError:
+    print("Err.. numbers only")
+    sys.exit()
+print("you entered number is: ", number)
+'''
+
+
+
+    
+'''
+number = int(input("Enter a number between 1 - 10: "))
+
+print("you entered number", number)
+'''
+
+
+#https://www.pythonforbeginners.com/error-handling/exception-handling-in-python
